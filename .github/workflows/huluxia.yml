@@ -24,5 +24,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: dir
+      run: dir
     - name: run
       run: python ./sign_in/02.葫芦侠三楼签到/main.py
