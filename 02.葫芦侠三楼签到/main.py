@@ -2,12 +2,13 @@ import json
 import hashlib
 import aiohttp
 import asyncio
+import os
 
 
 # 填写葫芦侠账号密码
 config = {
-    "account": "###",
-    "password": "###",
+    "account": os.environ["account"],
+    "password": os.environ["password"],
 }
 
 
