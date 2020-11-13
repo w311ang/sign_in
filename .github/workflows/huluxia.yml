@@ -9,11 +9,13 @@ on:
     paths:
       - '02.葫芦侠三楼签到/**'
       - 'requirements.txt'
+      - '.github/workflows/huluxia.yml'
   pull_request:
     branches: [ master ]
     paths:
       - '02.葫芦侠三楼签到/**'
       - 'requirements.txt'
+      - '.github/workflows/huluxia.yml'
   watch:
     types: started
   schedule:
