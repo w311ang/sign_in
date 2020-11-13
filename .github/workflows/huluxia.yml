@@ -60,5 +60,5 @@ jobs:
     - name: run
       run: python ./02.葫芦侠三楼签到/main.py
       env: 
-        account: ${{ secrets.HULUXIA_ACCOUNT }}
-        password: ${{ secrets.HULUXIA_PASSWORD }}
+        account: ${{ secrets.HULUXIA_ACCOUNT-1 }}
+        password: ${{ secrets.HULUXIA_PASSWORD-1 }}
