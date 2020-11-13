@@ -42,7 +42,6 @@ jobs:
       env: 
         account: ${{ secrets.HULUXIA_ACCOUNT }}
         password: ${{ secrets.HULUXIA_PASSWORD }}
-
   build-1:
 
     runs-on: ubuntu-latest
