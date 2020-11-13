@@ -6,10 +6,18 @@ name: 02.葫芦侠三楼签到
 on:
   push:
     branches: [ master ]
+    paths:
+      - '02.葫芦侠三楼签到/**'
+      - 'requirements.txt'
   pull_request:
     branches: [ master ]
+    paths:
+      - '02.葫芦侠三楼签到/**'
+      - 'requirements.txt'
   watch:
     types: started
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
