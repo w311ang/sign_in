@@ -42,23 +42,13 @@ jobs:
       env: 
         account: ${{ secrets.HULUXIA_ACCOUNT }}
         password: ${{ secrets.HULUXIA_PASSWORD }}
-  build-2:
-
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.6
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.6
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: run
+    - name: run-2
       run: python ./02.葫芦侠三楼签到/main.py
       env: 
         account: ${{ secrets.HULUXIA_ACCOUNT_2 }}
         password: ${{ secrets.HULUXIA_PASSWORD_2 }}
+    - name: run-3
+      run: python ./02.葫芦侠三楼签到/main.py
+      env: 
+        account: ${{ secrets.HULUXIA_ACCOUNT_3 }}
+        password: ${{ secrets.HULUXIA_PASSWORD_3 }}
