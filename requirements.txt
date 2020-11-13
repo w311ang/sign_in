@@ -22,7 +22,7 @@ multidict==4.7.6
 pycparser
 pylint==2.4.3
 pyOpenSSL
-pyqt5-tools==5.13.0.1.5
+pyqt5-tools
 PySocks==1.7.1
 python-dotenv==0.10.5
 pytz==2019.3
