@@ -27,4 +27,4 @@ jobs:
     - name: ls
       run: ls
     - name: run
-      run: python ./sign_in/02.葫芦侠三楼签到/main.py
+      run: python ./02.葫芦侠三楼签到/main.py
